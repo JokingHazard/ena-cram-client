@@ -15,12 +15,12 @@ Install required packages
 ```sh
 pip install -r requirements.txt
 ```
-## Run the App
-Run the following command
+## Run the code
+### Optional Command line arguments
+**--ref_seq_id**
+**--server_base_url**
+**--log_level**
+### Run the following command
 ```sh
 python app.py --ref_seq_id 3050107579885e1608e6fe50fae3f8d0 --server_base_url https://www.ebi.ac.uk/ena/cram --log_level INFO
 ```
-### Optional Command line arguments
-* **--ref_seq_id**
-* **--server_base_url**
-* **--log_level**
