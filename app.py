@@ -35,16 +35,18 @@ class ENAClient:
 
 if __name__ == "__main__":
 
-	# setting native logs of requests and urllib3 to error level to ignore them
-	logging.getLogger("requests").setLevel(logging.CRITICAL)
-	logging.getLogger("urllib3").setLevel(logging.CRITICAL) 
-	logging.basicConfig(level=logging.DEBUG)
-	
-	# get ref_seq_id, server_base_url as command line args.
+	# get ref_seq_id, server_base_url, log_level as command line args.
 	# If not provided, they take the default values
 	args=parse_args()  
 	ref_seq_id = args.ref_seq_id
 	server_base_url = args.server_base_url
+	severity = args.log_level
+
+	# setting native logs of requests and urllib3 to error level to ignore them
+	logging.getLogger("requests").setLevel(logging.CRITICAL)
+	logging.getLogger("urllib3").setLevel(logging.CRITICAL) 
+	logging.basicConfig(level=log_level)
+
 	ena = ENAClient(server_base_url=server_base_url, ref_seq_id=ref_seq_id)
 	metadata = ena.get_server_metadata()
 	logging.info('metadata endpoint response for reference sequence ID {}: {}'.format(ref_seq_id,metadata))
