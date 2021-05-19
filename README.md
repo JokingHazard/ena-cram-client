@@ -17,16 +17,15 @@ pip install -r requirements.txt
 ```
 ## Run the code
 ### Optional command-line arguments
-> **--ref_seq_id** 
-> default value: 3050107579885e1608e6fe50fae3f8d0 
-> description: ID parameter of the reference sequence.
-> **--server_base_url** 
-> default value: https://www.ebi.ac.uk/ena/cram
-> description: server url where the API is hosted
-> **--log_level** 
-> default value: INFO 
-> description: logging at or above this level
-
+**--ref_seq_id** 
+*default value*: 3050107579885e1608e6fe50fae3f8d0 
+*description*: ID parameter of the reference sequence.
+**--server_base_url** 
+*default value*: https://www.ebi.ac.uk/ena/cram
+*description*: server url where the API is hosted
+**--log_level** 
+*default value*: INFO 
+*description*: logging at or above this level
 
 ### Example usage
 ##### without command-line arguments
