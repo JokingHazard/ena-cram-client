@@ -27,7 +27,7 @@ pip install -r requirements.txt
 > default value: INFO 
 > description: logging at or above this level
 
-If a command-line argument is not provided, it assumes the default value.
+
 ### Example usage
 ##### without command-line arguments
 
@@ -42,4 +42,6 @@ python client.py --ref_seq_id 3050107579885e1608e6fe50fae3f8d0 --server_base_url
 ```
 
 ## Note:
-> If error occurs due to incorrect parameters or other reasons, the error will be available in the logs. Metadata will be None.
+* The command-line arguments are optional. If a command-line argument is not provided, it assumes the default value, as defined in the helper file.
+* Logs are configured to be displayed on the terminal.
+* If an error occurs due to incorrect parameters or other reasons, the error will be available in the logs. Metadata will be None.
