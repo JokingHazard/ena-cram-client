@@ -17,7 +17,7 @@ pip install -r requirements.txt
 ```
 ## Run the code
 ### Optional command-line arguments
-**--ref_seq_id** 
+**--ref_seq_id** <br/>
 *default value*: 3050107579885e1608e6fe50fae3f8d0 
 *description*: ID parameter of the reference sequence.
 **--server_base_url** 
